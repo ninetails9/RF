@@ -9,6 +9,7 @@
 	Ext.Loader.setConfig({ enabled: true });
 	Ext.application({
 		name: "MyApp",
+		requires: ['Ext.List', 'Ext.MessageBox', 'Ext.data.Store'],
 		launch: function() {
 			var list = Ext.create('Ext.List', {
 			    fullscreen: true,
